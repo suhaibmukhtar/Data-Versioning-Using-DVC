@@ -1,0 +1,10 @@
+## Step by step what all steps will be performed will be listed here
+## flow
+1. Create a git repo and clone it in local
+2. Create mycode.py, add code to it. (saves a csv file in new "data" folder)
+3. Do a git add, commit, push before initializing dvc
+4. Pip install dvc
+5. Peform "dvc init" (creates, .dvcignore and .dvc)
+6. run "mkdir s3" (creates a new directory s3) #will store experiments
+#in real-world this s3 will be of AWS, where we will be storing experiments
+
