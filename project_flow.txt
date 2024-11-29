@@ -47,3 +47,8 @@ Note: Inside .dvc file we are having all versions of data and their md5-inside
 23. Repeat step 19-22 to make next versions of data
 24. Now check git status and dvc status all should be up to date
 25. Now we have having many versions of the data
+26. Checking versions of data using and for Roll back
+git log --oneline
+git checkout <hash> - git checkout master
+dvc pull
+27. Now we can checkout any version of data using dvc checkout <hash> - git checkout
