@@ -45,3 +45,4 @@ b) file with data-version itself (data)
 Note: Inside .dvc file we are having all versions of data and their md5-inside
 
 23. Repeat step 19-22 to make next versions of data
+24. Now we have having many versions of the data
