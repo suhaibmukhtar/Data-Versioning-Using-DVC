@@ -16,6 +16,14 @@ new_record={
 #inserting a new record at end of rows
 data.loc[len(data.index)]=new_record
 
+new_record2={
+    "name":'Sara',
+    "age":22,
+    "city":"Sydney"
+}
+
+data.loc[len(data.index)]=new_record2
+
 #path where data will be stored
 DATA_DIR='data'
 if not os.path.exists(DATA_DIR):
