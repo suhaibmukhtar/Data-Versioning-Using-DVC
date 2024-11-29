@@ -5,7 +5,7 @@
 3. Do a git add, commit, push before initializing dvc
 4. Pip install dvc
 5. Peform "dvc init" (creates, .dvcignore and .dvc)
-6. run "mkdir s3" (creates a new directory s3) #will store experiments
+6. run "mkdir s3" (creates a new directory s3) #will store experiments and versions
 #in real-world this s3 will be of AWS, where we will be storing experiments
 7. Specifying path for DVC where data and experiments will be stored
 it can be local(like directory) or remote (like s3 bucket)
@@ -36,3 +36,11 @@ a)file with md5 i.e. id for data-version
 b) file with data-version itself (data)
 
 18. Do git add commit and push to mark this as first version of data
+19. Now we will make changes to mycode.py by adding new row of data, check changes via dvc status
+20. Now we have to track new changes and data via dvc using dvc commit and push
+21. will have two new files inside S3, This will create new Md5 file and version of data inside s3
+22. To track these changes inside git, we will do git add, commit and push
+
+Note: Inside .dvc file we are having all versions of data and their md5-inside
+
+

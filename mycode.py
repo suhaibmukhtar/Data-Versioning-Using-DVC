@@ -8,6 +8,14 @@ data=pd.DataFrame({
     "city":["New York",'Los Angles',"Chicago"]
 })
 
+new_record={
+    "name":'Sama',
+    "age":21,
+    "city":"San Francisco"
+}
+#inserting a new record at end of rows
+data.loc[len(data.index)]=new_record
+
 #path where data will be stored
 DATA_DIR='data'
 if not os.path.exists(DATA_DIR):
